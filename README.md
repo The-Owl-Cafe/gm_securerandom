@@ -20,18 +20,53 @@ Generates a number between `min` and `max` and returns it.
 
 #### Random bytes
 ```lua
-require("securerandom")
-print(util.Base64Encode(random.Bytes(16)))
+require( "securerandom" )
+print( util.Base64Encode( random.Bytes( 16 ) ) )
 ```
 
 #### Random number between 0 and 1
 ```lua
-require("securerandom")
-print(random.Number())
+require( "securerandom" )
+print( random.Number() )
+```
+
+#### Random number between 1 and 20.5
+```lua
+require( "securerandom" )
+print( random.Number( 20.5 ) )
 ```
 
 #### Random number between 5 and 10.5
 ```lua
-require("securerandom")
-print(random.Number(5, 10.5))
+require( "securerandom" )
+print( random.Number( 5, 10.5 ) )
+```
+
+
+#### Random number between 0 and 1
+```lua
+require( "securerandom" )
+print( random.WholeNumber() )
+```
+
+#### Random whole number between 1 and 20
+```lua
+require( "securerandom" )
+print( random.WholeNumber( 20 ) )
+```
+
+#### Random whole number between 5 and 10
+```lua
+require( "securerandom" )
+print( random.Number( 5, 10 ) )
+```
+
+
+#### Changes the seed to 1234 and prints the same number 5 and 10 in the console multiple times
+```lua
+require( "securerandom" )
+for i = 1, 10 do
+	random.RandomSeed( 1234 )
+	print( random.Number( 5, 10 ) )
+end
 ```
