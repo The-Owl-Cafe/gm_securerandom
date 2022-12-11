@@ -2,7 +2,7 @@ solution "gm_securerandom"
 
 	language "C++"
 	location "project"
-	flags { "StaticRuntime", "C++11" }
+	flags { "StaticRuntime", "C++20" }
 	targetdir "bin"
 	includedirs { "LuaInterface/src/" }
 	architecture "x86"
