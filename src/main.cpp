@@ -87,6 +87,8 @@ int randomBytes( lua_State * state ) {
 	return 1;
 }
 
+
+//WARNING: Not Fully tested, unsure if this will or will not produce duplicates, leak memory or outright fail catastrophically
 int randomSeed( lua_State * state ) {
 	if ( LUA->GetType( 1 ) != GarrysMod::Lua::Type::NIL ) {//Check if we supplied an argument
 		LUA->CheckType( 1, GarrysMod::Lua::Type::NUMBER );//Check if our argument is a number
