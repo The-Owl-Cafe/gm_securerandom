@@ -1,3 +1,5 @@
+# NOTICE: Owl Cafe is moving away from the use of binary modules. This will still exist for research purposes
+
 # gm_securerandom
 A module for generating secure random numbers and strings in Garry's Mod
 
